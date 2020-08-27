@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_zqTUYMuAEeaW7fkNf8_rhQ" entityName="defaultRepository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_0X1v0MuAEeaW7fkNf8_rhQ" entityName="Transactions">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_M5aBIMuBEeaW7fkNf8_rhQ" entityName="Provided_ITransaction_Transaction" providedInterface__OperationProvidedRole="_3ca7IMuAEeaW7fkNf8_rhQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_M5aBIcuBEeaW7fkNf8_rhQ" describedService__SEFF="_IaOgEMuBEeaW7fkNf8_rhQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_M5aoMMuBEeaW7fkNf8_rhQ" entityName="start" successor_AbstractAction="_PgX5sBFZEeeDurzqpleeCg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_M5aoMcuBEeaW7fkNf8_rhQ" entityName="stop" predecessor_AbstractAction="_PgX5sBFZEeeDurzqpleeCg"/>
+      <steps_Behaviour xsi:type="seff:BranchAction" id="_PgX5sBFZEeeDurzqpleeCg" predecessor_AbstractAction="_M5aoMMuBEeaW7fkNf8_rhQ" successor_AbstractAction="_M5aoMcuBEeaW7fkNf8_rhQ">
+        <branches_Branch xsi:type="seff:ProbabilisticBranchTransition" id="_SYO3oBFZEeeDurzqpleeCg" entityName="success" branchProbability="0.929088">
+          <branchBehaviour_BranchTransition id="_SYPesBFZEeeDurzqpleeCg">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_SYPesRFZEeeDurzqpleeCg" successor_AbstractAction="_TpENYBFZEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_SYQFwBFZEeeDurzqpleeCg" predecessor_AbstractAction="_TpENYBFZEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:InternalAction" id="_TpENYBFZEeeDurzqpleeCg" predecessor_AbstractAction="_SYPesRFZEeeDurzqpleeCg" successor_AbstractAction="_SYQFwBFZEeeDurzqpleeCg">
+              <resourceDemand_Action>
+                <specification_ParametericResourceDemand specification="1.09670393808E-05&#xA;"/>
+                <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+              </resourceDemand_Action>
+            </steps_Behaviour>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="seff:ProbabilisticBranchTransition" id="_a_WecBFZEeeDurzqpleeCg" entityName="fail" branchProbability="0.070912">
+          <branchBehaviour_BranchTransition id="_a_XFgBFZEeeDurzqpleeCg">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_a_XFgRFZEeeDurzqpleeCg" successor_AbstractAction="_c6NBkBFZEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_a_XskBFZEeeDurzqpleeCg" predecessor_AbstractAction="_c6NBkBFZEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:InternalAction" id="_c6NBkBFZEeeDurzqpleeCg" predecessor_AbstractAction="_a_XFgRFZEeeDurzqpleeCg" successor_AbstractAction="_a_XskBFZEeeDurzqpleeCg">
+              <resourceDemand_Action>
+                <specification_ParametericResourceDemand specification="6.632638672224E-04&#xA;"/>
+                <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+              </resourceDemand_Action>
+            </steps_Behaviour>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_4t1fsMuAEeaW7fkNf8_rhQ" entityName="ExperimentHandler">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_MSuboMuBEeaW7fkNf8_rhQ" entityName="Provided_IExperimentManager_ExperimentHandler" providedInterface__OperationProvidedRole="_6ebTkMuAEeaW7fkNf8_rhQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_NN_KAMuBEeaW7fkNf8_rhQ" entityName="Required_ITransaction_ExperimentHandler" requiredInterface__OperationRequiredRole="_3ca7IMuAEeaW7fkNf8_rhQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_MSvCsMuBEeaW7fkNf8_rhQ" describedService__SEFF="_8mdXEMuAEeaW7fkNf8_rhQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_MSvCscuBEeaW7fkNf8_rhQ" entityName="start" successor_AbstractAction="_3P4KQBFYEeeDurzqpleeCg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_MSvpwMuBEeaW7fkNf8_rhQ" entityName="stop" predecessor_AbstractAction="_3P4KQBFYEeeDurzqpleeCg"/>
+      <steps_Behaviour xsi:type="seff:ForkAction" id="_3P4KQBFYEeeDurzqpleeCg" predecessor_AbstractAction="_MSvCscuBEeaW7fkNf8_rhQ" successor_AbstractAction="_MSvpwMuBEeaW7fkNf8_rhQ">
+        <synchronisingBehaviours_ForkAction id="_5CsLsBFYEeeDurzqpleeCg">
+          <synchronousForkedBehaviours_SynchronisationPoint id="_6pACMBFYEeeDurzqpleeCg">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_6pApQBFYEeeDurzqpleeCg" successor_AbstractAction="_8rv9EBFYEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_6pApQRFYEeeDurzqpleeCg" predecessor_AbstractAction="_8rv9EBFYEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:LoopAction" id="_8rv9EBFYEeeDurzqpleeCg" predecessor_AbstractAction="_6pApQBFYEeeDurzqpleeCg" successor_AbstractAction="_6pApQRFYEeeDurzqpleeCg">
+              <bodyBehaviour_Loop id="_8rxyQBFYEeeDurzqpleeCg">
+                <steps_Behaviour xsi:type="seff:StartAction" id="_8rxyQRFYEeeDurzqpleeCg" successor_AbstractAction="_-ymU0BFYEeeDurzqpleeCg"/>
+                <steps_Behaviour xsi:type="seff:StopAction" id="_8rxyQhFYEeeDurzqpleeCg" predecessor_AbstractAction="_-ymU0BFYEeeDurzqpleeCg"/>
+                <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_-ymU0BFYEeeDurzqpleeCg" predecessor_AbstractAction="_8rxyQRFYEeeDurzqpleeCg" successor_AbstractAction="_8rxyQhFYEeeDurzqpleeCg" calledService_ExternalService="_IaOgEMuBEeaW7fkNf8_rhQ" role_ExternalService="_NN_KAMuBEeaW7fkNf8_rhQ"/>
+              </bodyBehaviour_Loop>
+              <iterationCount_LoopAction specification="numberOfTransactions.VALUE/4"/>
+            </steps_Behaviour>
+          </synchronousForkedBehaviours_SynchronisationPoint>
+          <synchronousForkedBehaviours_SynchronisationPoint id="_EmWcIBFZEeeDurzqpleeCg">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_EmXDMBFZEeeDurzqpleeCg" successor_AbstractAction="_F1JKgBFZEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_EmXDMRFZEeeDurzqpleeCg" predecessor_AbstractAction="_F1JKgBFZEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:LoopAction" id="_F1JKgBFZEeeDurzqpleeCg" predecessor_AbstractAction="_EmXDMBFZEeeDurzqpleeCg" successor_AbstractAction="_EmXDMRFZEeeDurzqpleeCg">
+              <bodyBehaviour_Loop id="_F1JKgRFZEeeDurzqpleeCg">
+                <steps_Behaviour xsi:type="seff:StartAction" id="_F1JxkBFZEeeDurzqpleeCg" successor_AbstractAction="_IjLeEBFZEeeDurzqpleeCg"/>
+                <steps_Behaviour xsi:type="seff:StopAction" id="_F1JxkRFZEeeDurzqpleeCg" predecessor_AbstractAction="_IjLeEBFZEeeDurzqpleeCg"/>
+                <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_IjLeEBFZEeeDurzqpleeCg" predecessor_AbstractAction="_F1JxkBFZEeeDurzqpleeCg" successor_AbstractAction="_F1JxkRFZEeeDurzqpleeCg" calledService_ExternalService="_IaOgEMuBEeaW7fkNf8_rhQ" role_ExternalService="_NN_KAMuBEeaW7fkNf8_rhQ"/>
+              </bodyBehaviour_Loop>
+              <iterationCount_LoopAction specification="numberOfTransactions.VALUE/4"/>
+            </steps_Behaviour>
+          </synchronousForkedBehaviours_SynchronisationPoint>
+          <synchronousForkedBehaviours_SynchronisationPoint id="_4maNcBFaEeeDurzqpleeCg">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_4ma0gBFaEeeDurzqpleeCg" successor_AbstractAction="_57kpkBFaEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_4ma0gRFaEeeDurzqpleeCg" predecessor_AbstractAction="_57kpkBFaEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:LoopAction" id="_57kpkBFaEeeDurzqpleeCg" predecessor_AbstractAction="_4ma0gBFaEeeDurzqpleeCg" successor_AbstractAction="_4ma0gRFaEeeDurzqpleeCg">
+              <bodyBehaviour_Loop id="_57lQoBFaEeeDurzqpleeCg">
+                <steps_Behaviour xsi:type="seff:StartAction" id="_57l3sBFaEeeDurzqpleeCg" successor_AbstractAction="_CUhRgBFbEeeDurzqpleeCg"/>
+                <steps_Behaviour xsi:type="seff:StopAction" id="_57l3sRFaEeeDurzqpleeCg" predecessor_AbstractAction="_CUhRgBFbEeeDurzqpleeCg"/>
+                <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_CUhRgBFbEeeDurzqpleeCg" predecessor_AbstractAction="_57l3sBFaEeeDurzqpleeCg" successor_AbstractAction="_57l3sRFaEeeDurzqpleeCg" calledService_ExternalService="_IaOgEMuBEeaW7fkNf8_rhQ" role_ExternalService="_NN_KAMuBEeaW7fkNf8_rhQ"/>
+              </bodyBehaviour_Loop>
+              <iterationCount_LoopAction specification="numberOfTransactions.VALUE/4"/>
+            </steps_Behaviour>
+          </synchronousForkedBehaviours_SynchronisationPoint>
+          <synchronousForkedBehaviours_SynchronisationPoint id="_FzU6sBFbEeeDurzqpleeCg">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_FzU6sRFbEeeDurzqpleeCg" successor_AbstractAction="_GjArMBFbEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_FzVhwBFbEeeDurzqpleeCg" predecessor_AbstractAction="_GjArMBFbEeeDurzqpleeCg"/>
+            <steps_Behaviour xsi:type="seff:LoopAction" id="_GjArMBFbEeeDurzqpleeCg" predecessor_AbstractAction="_FzU6sRFbEeeDurzqpleeCg" successor_AbstractAction="_FzVhwBFbEeeDurzqpleeCg">
+              <bodyBehaviour_Loop id="_GjBSQBFbEeeDurzqpleeCg">
+                <steps_Behaviour xsi:type="seff:StartAction" id="_GjBSQRFbEeeDurzqpleeCg" successor_AbstractAction="_MP_cIBFbEeeDurzqpleeCg"/>
+                <steps_Behaviour xsi:type="seff:StopAction" id="_GjB5UBFbEeeDurzqpleeCg" predecessor_AbstractAction="_MP_cIBFbEeeDurzqpleeCg"/>
+                <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_MP_cIBFbEeeDurzqpleeCg" predecessor_AbstractAction="_GjBSQRFbEeeDurzqpleeCg" successor_AbstractAction="_GjB5UBFbEeeDurzqpleeCg" calledService_ExternalService="_IaOgEMuBEeaW7fkNf8_rhQ" role_ExternalService="_NN_KAMuBEeaW7fkNf8_rhQ"/>
+              </bodyBehaviour_Loop>
+              <iterationCount_LoopAction specification="numberOfTransactions.VALUE/4"/>
+            </steps_Behaviour>
+          </synchronousForkedBehaviours_SynchronisationPoint>
+        </synchronisingBehaviours_ForkAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_3ca7IMuAEeaW7fkNf8_rhQ" entityName="ITransaction">
+    <signatures__OperationInterface id="_IaOgEMuBEeaW7fkNf8_rhQ" entityName="executeTransaction"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_6ebTkMuAEeaW7fkNf8_rhQ" entityName="IExperimentManager">
+    <signatures__OperationInterface id="_8mdXEMuAEeaW7fkNf8_rhQ" entityName="simulateTransactions">
+      <parameters__OperationSignature parameterName="numberOfTransactions">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+</repository:Repository>

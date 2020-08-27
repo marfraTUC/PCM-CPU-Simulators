@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.1" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.1" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_BCXFMMuCEeaW7fkNf8_rhQ" entityName="defaultSystem">
+  <assemblyContexts__ComposedStructure id="_C_A_IMuCEeaW7fkNf8_rhQ" entityName="Assembly_ExperimentHandler &lt;ExperimentHandler>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_4t1fsMuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_Gx1wgMuCEeaW7fkNf8_rhQ" entityName="Assembly_Transaction &lt;Transaction>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_0X1v0MuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_IBQxAMuCEeaW7fkNf8_rhQ" entityName="Connector Assembly_ExperimentHandler &lt;ExperimentHandler> -> Assembly_Transaction &lt;Transaction>" requiringAssemblyContext_AssemblyConnector="_C_A_IMuCEeaW7fkNf8_rhQ" providingAssemblyContext_AssemblyConnector="_Gx1wgMuCEeaW7fkNf8_rhQ">
+    <providedRole_AssemblyConnector href="default.repository#_M5aBIMuBEeaW7fkNf8_rhQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_NN_KAMuBEeaW7fkNf8_rhQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_JnM0EMuCEeaW7fkNf8_rhQ" entityName="ProvDelegation Provided_IExperimentManager -> Provided_IExperimentManager_ExperimentHandler" outerProvidedRole_ProvidedDelegationConnector="_IhTjAMuCEeaW7fkNf8_rhQ" assemblyContext_ProvidedDelegationConnector="_C_A_IMuCEeaW7fkNf8_rhQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_MSuboMuBEeaW7fkNf8_rhQ"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_IhTjAMuCEeaW7fkNf8_rhQ" entityName="Provided_IExperimentManager">
+    <providedInterface__OperationProvidedRole href="default.repository#_6ebTkMuAEeaW7fkNf8_rhQ"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

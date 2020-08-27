@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_BCXFMMuCEeaW7fkNf8_rhQ" entityName="defaultSystem">
+  <assemblyContexts__ComposedStructure id="_C_A_IMuCEeaW7fkNf8_rhQ" entityName="Assembly_ExperimentHandler &lt;ExperimentHandler>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_4t1fsMuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_AjC3QBLkEeefhYGEQ4GM3w" entityName="Assembly_Transactions2 &lt;Transactions>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_0X1v0MuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_ZO4e4BLkEeefhYGEQ4GM3w" entityName="Assembly_Transactions1 &lt;Transactions>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_0X1v0MuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_xzVvUBLoEeefhYGEQ4GM3w" entityName="Assembly_Transactions3 &lt;Transactions>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_0X1v0MuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_3r0loBLoEeefhYGEQ4GM3w" entityName="Assembly_Transactions4 &lt;Transactions>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_0X1v0MuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_6jiHsBLqEeefhYGEQ4GM3w" entityName="Assembly_Transactions5 &lt;Transactions>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_0X1v0MuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="__BKwoBLqEeefhYGEQ4GM3w" entityName="Assembly_Transactions6 &lt;Transactions>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_0X1v0MuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_ebu6EBLrEeefhYGEQ4GM3w" entityName="Assembly_Transactions7 &lt;Transactions>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_0X1v0MuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_yw8fsBLrEeefhYGEQ4GM3w" entityName="Assembly_Transactions8 &lt;Transactions>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_0X1v0MuAEeaW7fkNf8_rhQ"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_NqnxgBLkEeefhYGEQ4GM3w" entityName="Connector Assembly_ExperimentHandler &lt;ExperimentHandler> -> Assembly_Transactions2 &lt;Transactions>" requiringAssemblyContext_AssemblyConnector="_C_A_IMuCEeaW7fkNf8_rhQ" providingAssemblyContext_AssemblyConnector="_AjC3QBLkEeefhYGEQ4GM3w">
+    <providedRole_AssemblyConnector href="default.repository#_M5aBIMuBEeaW7fkNf8_rhQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_-36LIBLjEeefhYGEQ4GM3w"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_JnM0EMuCEeaW7fkNf8_rhQ" entityName="ProvDelegation Provided_IExperimentManager -> Provided_IExperimentManager_ExperimentHandler" outerProvidedRole_ProvidedDelegationConnector="_IhTjAMuCEeaW7fkNf8_rhQ" assemblyContext_ProvidedDelegationConnector="_C_A_IMuCEeaW7fkNf8_rhQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_MSuboMuBEeaW7fkNf8_rhQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_cLKCwBLkEeefhYGEQ4GM3w" entityName="Connector Assembly_ExperimentHandler &lt;ExperimentHandler> -> Assembly_Transactions1 &lt;Transactions>" requiringAssemblyContext_AssemblyConnector="_C_A_IMuCEeaW7fkNf8_rhQ" providingAssemblyContext_AssemblyConnector="_ZO4e4BLkEeefhYGEQ4GM3w">
+    <providedRole_AssemblyConnector href="default.repository#_M5aBIMuBEeaW7fkNf8_rhQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_NN_KAMuBEeaW7fkNf8_rhQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_2vmN8BLoEeefhYGEQ4GM3w" entityName="Connector Assembly_ExperimentHandler &lt;ExperimentHandler> -> Assembly_Transactions3 &lt;Transactions>" requiringAssemblyContext_AssemblyConnector="_C_A_IMuCEeaW7fkNf8_rhQ" providingAssemblyContext_AssemblyConnector="_xzVvUBLoEeefhYGEQ4GM3w">
+    <providedRole_AssemblyConnector href="default.repository#_M5aBIMuBEeaW7fkNf8_rhQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_o6CzYBLoEeefhYGEQ4GM3w"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_8DSVIBLoEeefhYGEQ4GM3w" entityName="Connector Assembly_ExperimentHandler &lt;ExperimentHandler> -> Assembly_Transactions4 &lt;Transactions>" requiringAssemblyContext_AssemblyConnector="_C_A_IMuCEeaW7fkNf8_rhQ" providingAssemblyContext_AssemblyConnector="_3r0loBLoEeefhYGEQ4GM3w">
+    <providedRole_AssemblyConnector href="default.repository#_M5aBIMuBEeaW7fkNf8_rhQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_qCMuQBLoEeefhYGEQ4GM3w"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_-hhAMBLqEeefhYGEQ4GM3w" entityName="Connector Assembly_ExperimentHandler &lt;ExperimentHandler> -> Assembly_Transactions5 &lt;Transactions>" requiringAssemblyContext_AssemblyConnector="_C_A_IMuCEeaW7fkNf8_rhQ" providingAssemblyContext_AssemblyConnector="_6jiHsBLqEeefhYGEQ4GM3w">
+    <providedRole_AssemblyConnector href="default.repository#_M5aBIMuBEeaW7fkNf8_rhQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_vr5PwBLqEeefhYGEQ4GM3w"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_CvA7YBLrEeefhYGEQ4GM3w" entityName="Connector Assembly_ExperimentHandler &lt;ExperimentHandler> -> Assembly_Transactions6 &lt;Transactions>" requiringAssemblyContext_AssemblyConnector="_C_A_IMuCEeaW7fkNf8_rhQ" providingAssemblyContext_AssemblyConnector="__BKwoBLqEeefhYGEQ4GM3w">
+    <providedRole_AssemblyConnector href="default.repository#_M5aBIMuBEeaW7fkNf8_rhQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_wzVY8BLqEeefhYGEQ4GM3w"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_hzGegBLrEeefhYGEQ4GM3w" entityName="Connector Assembly_ExperimentHandler &lt;ExperimentHandler> -> Assembly_Transactions7 &lt;Transactions>" requiringAssemblyContext_AssemblyConnector="_C_A_IMuCEeaW7fkNf8_rhQ" providingAssemblyContext_AssemblyConnector="_ebu6EBLrEeefhYGEQ4GM3w">
+    <providedRole_AssemblyConnector href="default.repository#_M5aBIMuBEeaW7fkNf8_rhQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_xX1NIBLqEeefhYGEQ4GM3w"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_2uQp0BLrEeefhYGEQ4GM3w" entityName="Connector Assembly_ExperimentHandler &lt;ExperimentHandler> -> Assembly_Transactions &lt;Transactions>" requiringAssemblyContext_AssemblyConnector="_C_A_IMuCEeaW7fkNf8_rhQ" providingAssemblyContext_AssemblyConnector="_yw8fsBLrEeefhYGEQ4GM3w">
+    <providedRole_AssemblyConnector href="default.repository#_M5aBIMuBEeaW7fkNf8_rhQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_yKpxMBLqEeefhYGEQ4GM3w"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_IhTjAMuCEeaW7fkNf8_rhQ" entityName="Provided_IExperimentManager">
+    <providedInterface__OperationProvidedRole href="default.repository#_6ebTkMuAEeaW7fkNf8_rhQ"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

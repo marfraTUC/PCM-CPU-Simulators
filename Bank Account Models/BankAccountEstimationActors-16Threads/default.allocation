@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_rMNb0MuCEeaW7fkNf8_rhQ" entityName="defaultAllocation">
+  <targetResourceEnvironment_Allocation href="default.resourceenvironment#/"/>
+  <system_Allocation href="default.system#_BCXFMMuCEeaW7fkNf8_rhQ"/>
+  <allocationContexts_Allocation id="_sB9YEMuCEeaW7fkNf8_rhQ" entityName="Allocation_Assembly_ExperimentHandler &lt;ExperimentHandler> &lt;ExperimentHandler>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_C_A_IMuCEeaW7fkNf8_rhQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_0GA5YBLkEeefhYGEQ4GM3w" entityName="Allocation_Assembly_Transactions1 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_ZO4e4BLkEeefhYGEQ4GM3w"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_02bpsBLkEeefhYGEQ4GM3w" entityName="Allocation_Assembly_Transactions2 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_AjC3QBLkEeefhYGEQ4GM3w"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_KYSr0BLpEeefhYGEQ4GM3w" entityName="Allocation_Assembly_Transactions3 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_xzVvUBLoEeefhYGEQ4GM3w"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_L0dH0BLpEeefhYGEQ4GM3w" entityName="Allocation_Assembly_Transactions4 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_3r0loBLoEeefhYGEQ4GM3w"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_4QuiIBLrEeefhYGEQ4GM3w" entityName="Allocation_Assembly_Transactions5 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_6jiHsBLqEeefhYGEQ4GM3w"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_5SJi4BLrEeefhYGEQ4GM3w" entityName="Allocation_Assembly_Transactions6 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#__BKwoBLqEeefhYGEQ4GM3w"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_6TkjoBLrEeefhYGEQ4GM3w" entityName="Allocation_Assembly_Transactions7 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_ebu6EBLrEeefhYGEQ4GM3w"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="__f3CUBLrEeefhYGEQ4GM3w" entityName="Allocation_Assembly_Transactions8 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_yw8fsBLrEeefhYGEQ4GM3w"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_kFELABL0Eeezkqi8yNfN-g" entityName="Allocation_Assembly_Transactions9 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_B9SfUBLyEeezkqi8yNfN-g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_lQHo4BL0Eeezkqi8yNfN-g" entityName="Allocation_Assembly_Transactions10 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_GG-4kBLyEeezkqi8yNfN-g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_oG-hQBL0Eeezkqi8yNfN-g" entityName="Allocation_Assembly_Transactions11 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_L2TL0BLyEeezkqi8yNfN-g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_pJ4vwBL0Eeezkqi8yNfN-g" entityName="Allocation_Assembly_Transactions12 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_RrongBLyEeezkqi8yNfN-g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_qouFQBL0Eeezkqi8yNfN-g" entityName="Allocation_Assembly_Transactions13 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_ZTIkYBLyEeezkqi8yNfN-g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_wsmTQBL0Eeezkqi8yNfN-g" entityName="Allocation_Assembly_Transactions14 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_f_EQ4BLyEeezkqi8yNfN-g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_x0DDgBL0Eeezkqi8yNfN-g" entityName="Allocation_Assembly_Transactions15 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_l1dcgBLyEeezkqi8yNfN-g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_zghzcBL0Eeezkqi8yNfN-g" entityName="Allocation_Assembly_Transactions16 &lt;Transactions> &lt;Transactions>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_K9EOQFP2Eea2AoC5pjcnpA"/>
+    <assemblyContext_AllocationContext href="default.system#_pgSIcBLyEeezkqi8yNfN-g"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

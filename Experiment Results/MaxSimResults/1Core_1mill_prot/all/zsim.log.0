@@ -1,0 +1,64 @@
+[S 0] Started instance
+[S 0] WARN: sim.ffReinstrument = true, switching fast-forwarding on a multi-threaded process may be unstable
+[S 0] Limiting concurrent threads to 12
+[S 0] Started RR scheduler, quantum=10000 phases
+[S 0] mem-0: domain 0, 4 ranks/ch 8 banks/rank, tech DDR3-1333-CL10, boundLat 90 rd / 40 wr
+[S 0] mem-0: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-1: domain 0, 4 ranks/ch 8 banks/rank, tech DDR3-1333-CL10, boundLat 90 rd / 40 wr
+[S 0] mem-1: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-2: domain 0, 4 ranks/ch 8 banks/rank, tech DDR3-1333-CL10, boundLat 90 rd / 40 wr
+[S 0] mem-2: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] Initialized system
+[S 0] HDF5 backend: Opening /usr/local/src/MaxSim/zsim.h5
+[S 0] HDF5 backend: Created table, 14080 bytes/record, 75 records/write
+[S 0] HDF5 backend: Opening /usr/local/src/MaxSim/zsim-ev.h5
+[S 0] HDF5 backend: Created table, 14080 bytes/record, 10 records/write
+[S 0] HDF5 backend: Opening /usr/local/src/MaxSim/zsim-cmp.h5
+[S 0] HDF5 backend: Created table, 3384 bytes/record, 1 records/write
+[S 0] Initialization complete
+[S 0] Started process, PID 19
+[S 0] procMask: 0x0
+[S 0] [0] Adjusting clocks, domain 0, de-ffwd 0
+[S 0] vDSO info initialized
+[S 0] Started contention simulation thread 0
+[S 0] Started scheduler watchdog thread
+[S 0] FF control Thread TID 22
+[S 0] FF thread 0 starting, TID 19
+[S 0] [0] Post-patching SYS_sched_getaffinity size 32 cpuset 0x602010
+[S 0] FF thread 4 starting, TID 23
+[S 0] [4] Post-patching SYS_sched_getaffinity size 32 cpuset 0x7fffbc0008c0
+[S 0] FF thread 5 starting, TID 24
+[S 0] [5] Post-patching SYS_sched_getaffinity size 32 cpuset 0x7fffb40008c0
+[S 0] FF thread 6 starting, TID 25
+[S 0] FF thread 7 starting, TID 26
+[S 0] [7] Post-patching SYS_sched_getaffinity size 32 cpuset 0x7fffb00008c0
+[S 0] [6] Post-patching SYS_sched_getaffinity size 32 cpuset 0x7fff9c0008c0
+[S 0] ROI_BEGIN, exiting fast-forward
+[S 0] [0] Adjusting clocks, domain 0, de-ffwd 1
+[S 0] Thread 0 starting, TID 19
+[S 0] Thread 8 starting, TID 27
+[S 0] [8] Post-patching SYS_sched_getaffinity size 32 cpuset 0x7fff940008c0
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [0/8] futex (202) @ 0x7fffe246f402
+[S 0] Blacklisting from future fake leaves: [0] futex @ 0x7fffe246f402 | arg0 0x7fff940008f4 arg1 0x80
+[S 0] Thread 4 starting, TID 23
+[S 0] WARN: Futex wake matching failed (0/1) (external/ff waiters?)
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [0/4] futex (202) @ 0x7fffe2471f1a
+[S 0] Blacklisting from future fake leaves: [0] futex @ 0x7fffe2471f1a | arg0 0x625cf0 arg1 0x80
+[S 0] Dumping eventual stats ID 1 for process GROUP 0 (Request from Maxine VM to dump eventual stats)
+[S 0] Dumping eventual stats ID 2 for process GROUP 0 (Request from Maxine VM to dump eventual stats)
+[S 0] Thread 5 starting, TID 24
+[S 0] WARN: Futex wake matching failed (0/1) (external/ff waiters?)
+[S 0] Thread 6 starting, TID 25
+[S 0] WARN: Futex wake matching failed (0/1) (external/ff waiters?)
+[S 0] Dumping eventual stats ID 3 for process GROUP 0 (Request from Maxine VM to dump eventual stats)
+[S 0] Dumping eventual stats ID 4 for process GROUP 0 (Request from Maxine VM to dump eventual stats)
+[S 0] Dumping eventual stats ID 5 for process GROUP 0 (Request from Maxine VM to dump eventual stats)
+[S 0] Dumping eventual stats ID 6 for process GROUP 0 (Request from Maxine VM to dump eventual stats)
+[S 0] Dumping eventual stats ID 7 for process GROUP 0 (Request from Maxine VM to dump eventual stats)
+[S 0] Dumping eventual stats ID 8 for process GROUP 0 (Request from Maxine VM to dump eventual stats)
+[S 0] Max total (aggregate) instructions reached (1000000020283)
+[S 0] Termination condition met, exiting
+[S 0] Dumping termination stats
+[S 0] Terminating scheduler watchdog thread

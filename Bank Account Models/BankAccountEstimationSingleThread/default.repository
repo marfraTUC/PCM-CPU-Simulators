@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_zqTUYMuAEeaW7fkNf8_rhQ" entityName="defaultRepository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_0X1v0MuAEeaW7fkNf8_rhQ" entityName="Transactions">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_M5aBIMuBEeaW7fkNf8_rhQ" entityName="Provided_ITransaction_Transaction" providedInterface__OperationProvidedRole="_3ca7IMuAEeaW7fkNf8_rhQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_wjwuwAWrEeehVYiW3PEnzQ" entityName="Required_IAccounts_Transaction" requiredInterface__OperationRequiredRole="_V6ysEAWrEeehVYiW3PEnzQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_M5aBIcuBEeaW7fkNf8_rhQ" describedService__SEFF="_IaOgEMuBEeaW7fkNf8_rhQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_M5aoMMuBEeaW7fkNf8_rhQ" entityName="start" successor_AbstractAction="_kAcnMBB3EeeRFN1pXzwS-A"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_M5aoMcuBEeaW7fkNf8_rhQ" entityName="stop" predecessor_AbstractAction="_kAcnMBB3EeeRFN1pXzwS-A"/>
+      <steps_Behaviour xsi:type="seff:BranchAction" id="_kAcnMBB3EeeRFN1pXzwS-A" entityName="failable" predecessor_AbstractAction="_M5aoMMuBEeaW7fkNf8_rhQ" successor_AbstractAction="_M5aoMcuBEeaW7fkNf8_rhQ">
+        <branches_Branch xsi:type="seff:ProbabilisticBranchTransition" id="_oYSKIBB3EeeRFN1pXzwS-A" entityName="success" branchProbability="0.746826">
+          <branchBehaviour_BranchTransition id="_oYWbkBB3EeeRFN1pXzwS-A">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_oYZe4BB3EeeRFN1pXzwS-A" successor_AbstractAction="_0eEQMBB3EeeRFN1pXzwS-A"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_oYaF8BB3EeeRFN1pXzwS-A" predecessor_AbstractAction="_5JuuEBB3EeeRFN1pXzwS-A"/>
+            <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_0eEQMBB3EeeRFN1pXzwS-A" predecessor_AbstractAction="_oYZe4BB3EeeRFN1pXzwS-A" successor_AbstractAction="_5JuuEBB3EeeRFN1pXzwS-A" calledService_ExternalService="_ZTUHEAWrEeehVYiW3PEnzQ" role_ExternalService="_wjwuwAWrEeehVYiW3PEnzQ"/>
+            <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_5JuuEBB3EeeRFN1pXzwS-A" predecessor_AbstractAction="_0eEQMBB3EeeRFN1pXzwS-A" successor_AbstractAction="_oYaF8BB3EeeRFN1pXzwS-A" calledService_ExternalService="_cM3uIAWrEeehVYiW3PEnzQ" role_ExternalService="_wjwuwAWrEeehVYiW3PEnzQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="seff:ProbabilisticBranchTransition" id="_tNmTQBB3EeeRFN1pXzwS-A" entityName="fail" branchProbability="0.253174">
+          <branchBehaviour_BranchTransition id="_tNnhYBB3EeeRFN1pXzwS-A">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_tNnhYRB3EeeRFN1pXzwS-A" successor_AbstractAction="_8aTuABB3EeeRFN1pXzwS-A"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_tNoIcBB3EeeRFN1pXzwS-A" predecessor_AbstractAction="_-KZLkBB3EeeRFN1pXzwS-A"/>
+            <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_8aTuABB3EeeRFN1pXzwS-A" predecessor_AbstractAction="_tNnhYRB3EeeRFN1pXzwS-A" successor_AbstractAction="_-KZLkBB3EeeRFN1pXzwS-A" calledService_ExternalService="_ZTUHEAWrEeehVYiW3PEnzQ" role_ExternalService="_wjwuwAWrEeehVYiW3PEnzQ"/>
+            <steps_Behaviour xsi:type="seff:InternalAction" id="_-KZLkBB3EeeRFN1pXzwS-A" entityName="exceptionHandling" predecessor_AbstractAction="_8aTuABB3EeeRFN1pXzwS-A" successor_AbstractAction="_tNoIcBB3EeeRFN1pXzwS-A">
+              <resourceDemand_Action>
+                <specification_ParametericResourceDemand specification="6.632638672224E-07-(1.09670393808E-08/2)"/>
+                <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+              </resourceDemand_Action>
+            </steps_Behaviour>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_4t1fsMuAEeaW7fkNf8_rhQ" entityName="ExperimentHandler">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_MSuboMuBEeaW7fkNf8_rhQ" entityName="Provided_IExperimentManager_ExperimentHandler" providedInterface__OperationProvidedRole="_6ebTkMuAEeaW7fkNf8_rhQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_NN_KAMuBEeaW7fkNf8_rhQ" entityName="Required_ITransaction_ExperimentHandler" requiredInterface__OperationRequiredRole="_3ca7IMuAEeaW7fkNf8_rhQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_MSvCsMuBEeaW7fkNf8_rhQ" describedService__SEFF="_8mdXEMuAEeaW7fkNf8_rhQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_MSvCscuBEeaW7fkNf8_rhQ" entityName="start" successor_AbstractAction="_OcoucMuBEeaW7fkNf8_rhQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_MSvpwMuBEeaW7fkNf8_rhQ" entityName="stop" predecessor_AbstractAction="_OcoucMuBEeaW7fkNf8_rhQ"/>
+      <steps_Behaviour xsi:type="seff:LoopAction" id="_OcoucMuBEeaW7fkNf8_rhQ" entityName="executeAllTransactions" predecessor_AbstractAction="_MSvCscuBEeaW7fkNf8_rhQ" successor_AbstractAction="_MSvpwMuBEeaW7fkNf8_rhQ">
+        <bodyBehaviour_Loop id="_OcqjoMuBEeaW7fkNf8_rhQ">
+          <steps_Behaviour xsi:type="seff:StartAction" id="_OcqjocuBEeaW7fkNf8_rhQ" successor_AbstractAction="_bvGqEMuBEeaW7fkNf8_rhQ"/>
+          <steps_Behaviour xsi:type="seff:StopAction" id="_OcqjosuBEeaW7fkNf8_rhQ" predecessor_AbstractAction="_bvGqEMuBEeaW7fkNf8_rhQ"/>
+          <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_bvGqEMuBEeaW7fkNf8_rhQ" predecessor_AbstractAction="_OcqjocuBEeaW7fkNf8_rhQ" successor_AbstractAction="_OcqjosuBEeaW7fkNf8_rhQ" calledService_ExternalService="_IaOgEMuBEeaW7fkNf8_rhQ" role_ExternalService="_NN_KAMuBEeaW7fkNf8_rhQ"/>
+        </bodyBehaviour_Loop>
+        <iterationCount_LoopAction specification="numberOfTransactions.VALUE"/>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_T29MEAWrEeehVYiW3PEnzQ" entityName="Accounts">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_vqp8gAWrEeehVYiW3PEnzQ" entityName="Provided_IAccounts_Accounts" providedInterface__OperationProvidedRole="_V6ysEAWrEeehVYiW3PEnzQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_vqx4UAWrEeehVYiW3PEnzQ" describedService__SEFF="_ZTUHEAWrEeehVYiW3PEnzQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_vqzGcAWrEeehVYiW3PEnzQ" entityName="start" successor_AbstractAction="_iNeJMAWsEeehVYiW3PEnzQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_vqzGcQWrEeehVYiW3PEnzQ" entityName="stop" predecessor_AbstractAction="_iNeJMAWsEeehVYiW3PEnzQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_iNeJMAWsEeehVYiW3PEnzQ" entityName="withdraw" predecessor_AbstractAction="_vqzGcAWrEeehVYiW3PEnzQ" successor_AbstractAction="_vqzGcQWrEeehVYiW3PEnzQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.09670393808E-08/2"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_vqztgAWrEeehVYiW3PEnzQ" describedService__SEFF="_cM3uIAWrEeehVYiW3PEnzQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_vq0UkAWrEeehVYiW3PEnzQ" entityName="start" successor_AbstractAction="_dqqJ0BB3EeeRFN1pXzwS-A"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_vq0UkQWrEeehVYiW3PEnzQ" entityName="stop" predecessor_AbstractAction="_dqqJ0BB3EeeRFN1pXzwS-A"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_dqqJ0BB3EeeRFN1pXzwS-A" entityName="deposit" predecessor_AbstractAction="_vq0UkAWrEeehVYiW3PEnzQ" successor_AbstractAction="_vq0UkQWrEeehVYiW3PEnzQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.09670393808E-08/2"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_3ca7IMuAEeaW7fkNf8_rhQ" entityName="ITransaction">
+    <signatures__OperationInterface id="_IaOgEMuBEeaW7fkNf8_rhQ" entityName="executeTransaction"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_6ebTkMuAEeaW7fkNf8_rhQ" entityName="IExperimentManager">
+    <signatures__OperationInterface id="_8mdXEMuAEeaW7fkNf8_rhQ" entityName="simulateTransactions">
+      <parameters__OperationSignature parameterName="numberOfTransactions">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_V6ysEAWrEeehVYiW3PEnzQ" entityName="IAccounts">
+    <signatures__OperationInterface id="_ZTUHEAWrEeehVYiW3PEnzQ" entityName="withdraw">
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_cM3uIAWrEeehVYiW3PEnzQ" entityName="deposit"/>
+  </interfaces__Repository>
+</repository:Repository>

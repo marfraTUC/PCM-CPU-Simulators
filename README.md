@@ -31,7 +31,19 @@ The aim of this repos and the coresponding thesises is tp connecting Palladio to
 ##### Commands
 
 ###### Option 1:
-Lode the prebuild docker image with `docker -i "nameOfDockerImage.tar"` run the loaded docker image with `docker run --privileged --rm -it "nameOfDockerImage"`
+Lode the prebuild docker image with `docker pull 87t8kt3opuqv4solbce3/maxsim` run the loaded docker image with `docker run --privileged --rm -it "nameOfDockerImage"`
+
+List of all the docker images of the different Simulators: 
+- docker pull 87t8kt3opuqv4solbce3/maxsim
+- docker pull 87t8kt3opuqv4solbce3/tejas
+- docker pull 87t8kt3opuqv4solbce3/tejasjava
+- docker pull 87t8kt3opuqv4solbce3/zsim
+- docker pull 87t8kt3opuqv4solbce3/sniper
+- docker pull 87t8kt3opuqv4solbce3/multi2sim
+- docker pull 87t8kt3opuqv4solbce3/gem5
+
+
+
 
 ###### Option 2:
 1. (ON HOST) `cd docker/MaxSim/`

@@ -1,0 +1,3 @@
+[submodule "Simulators/simulatorsDocker"]
+	path = Simulators/simulatorsDocker
+	url = https://github.com/BeIeriand/simulatorsDocker.git
